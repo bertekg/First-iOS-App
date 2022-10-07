@@ -11,9 +11,13 @@ struct ContentView: View {
     @State private var isShowingPopever = false
     var body: some View {
         VStack {
-            Text("Hello, world!")
+            Text("Hello, iOS!")
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                 .padding()
+            Text("Created by")
+                .font(.title2)
+            Text("Bartłomiej Grywalski")
+                .font(.title2)
             Button("Press me!") {
                 self.isShowingPopever = true;
             }
@@ -27,6 +31,7 @@ struct ContentView: View {
                     
                 }
             }
+            .padding()
         }
     }
 }
